@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.tsbuildinfo
+work/
+test-results/
+playwright-report/
+.env.local
+examples/**/.godot/
+examples/**/*.gd.uid

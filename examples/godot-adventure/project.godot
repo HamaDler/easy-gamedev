@@ -1,0 +1,12 @@
+config_version=5
+[application]
+config/name="Wayfinder — learning reference"
+run/main_scene="res://Main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+[display]
+window/size/viewport_width=960
+window/size/viewport_height=600
+window/stretch/mode="canvas_items"
+[rendering]
+renderer/rendering_method="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.1, 0.13, 0.12, 1)
