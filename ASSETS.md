@@ -10,6 +10,6 @@ Final prompt:
 
 Mode: new image generation, transparent background, no reference image. No external image requests or API keys are required at runtime.
 
-Diagrams, the favicon, and interactive simulations are authored in SVG, CSS, and Three.js because their structure needs to remain precise and interactive. The generated illustration is decorative; the educational diagrams are separate original teaching material.
+Interactive teaching diagrams, the favicon, and simulations are authored in SVG, CSS, and Three.js so their structure stays precise and interactive. Chapter media also includes generated explanatory illustrations; these complement the interactive labs.
 
 Visual references: [Anthropic](https://www.anthropic.com/) and [Claude product overview](https://claude.com/product/overview). The design borrows the warm editorial approach while retaining the Vibe Coding Games name and original mark.

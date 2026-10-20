@@ -58,5 +58,8 @@
     "fh-11-hero":  "media/fh-11-hero.jpg",
     "fh-11-shelf":  "media/fh-11-shelf.jpg",
     "fh-12-hero":  "media/fh-12-hero.jpg",
-    "fh-12-stream":  "media/fh-12-stream.jpg"
+    "fh-12-stream":  "media/fh-12-stream.jpg",
+    "f2-01-hero":  "media/f2-01-hero.jpg",
+    "f2-01-spritesheet":  "media/f2-01-spritesheet.jpg",
+    "f2-02-hero":  "media/f2-02-hero.jpg"
 }
