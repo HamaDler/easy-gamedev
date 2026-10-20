@@ -64,5 +64,8 @@
     "f2-02-hero":  "media/f2-02-hero.jpg",
     "f2-02-deadzone":  "media/f2-02-deadzone.jpg",
     "f2-03-hero":  "media/f2-03-hero.jpg",
-    "f2-03-grid":  "media/f2-03-grid.jpg"
+    "f2-03-grid":  "media/f2-03-grid.jpg",
+    "f2-04-hero":  "media/f2-04-hero.jpg",
+    "f2-04-tileset":  "media/f2-04-tileset.jpg",
+    "f2-05-hero":  "media/f2-05-hero.jpg"
 }
