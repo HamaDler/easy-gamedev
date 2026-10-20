@@ -15,7 +15,7 @@ if (Test-Path -LiteralPath $sourcePath) {
 }
 $provenancePath = Join-Path $mediaDirectory 'generation.json'
 $provenance = @()
-if (Test-Path -LiteralPath $provenancePath) { $provenance = @(Get-Content -LiteralPath $provenancePath -Raw | ConvertFrom-Json) }
+if (Test-Path -LiteralPath $provenancePath) { $provenance = Get-Content -LiteralPath $provenancePath -Raw | ConvertFrom-Json }
 foreach ($record in $records) {
     $target = Join-Path $mediaDirectory ($record.id + '.jpg')
     $bitmap = [System.Drawing.Image]::FromFile($record.path)
