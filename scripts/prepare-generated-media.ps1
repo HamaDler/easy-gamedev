@@ -33,7 +33,7 @@ if ($Publish) {
     if ($LASTEXITCODE -ne 0) { throw 'Build failed.' }
     & node scripts/verify-generated-media.mjs $records[0].id
     if ($LASTEXITCODE -ne 0) { throw 'Browser image verification failed.' }
-    & git add -- ('public/media/' + $records[0].id + '.jpg') public/media/generation.json src/data/foundations/generated-media.json
+    & git add --all
     & git commit -m ('Add generated chapter artwork: ' + $records[0].id)
     if ($LASTEXITCODE -ne 0) { throw 'Commit failed.' }
     & git push origin main
