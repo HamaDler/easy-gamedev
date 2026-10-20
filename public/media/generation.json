@@ -132,5 +132,20 @@
         "id":  "f3-02-hero",
         "mode":  "built-in imagegen",
         "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: The same stone corridor shown in two framed panels: one from a first-person view with hands holding a lantern, the other from a third-person view behind a cloaked character.\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
+    },
+    {
+        "id":  "f3-02-spring",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 4:3.\nPrimary request: A third-person camera on a stretchy spring attached to a character, shortening as it brushes against a stone wall, drawn like a friendly technical illustration.\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
+    },
+    {
+        "id":  "f3-03-hero",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A small hero running across a grassy 3D hillside with a soft round shadow beneath them, a camera floating behind, and a faint arrow on the ground showing the direction relative to the camera.\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
+    },
+    {
+        "id":  "f3-03-shadow",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A small hero jumping between floating platforms with a round dark shadow on the ground directly below them, the shadow shrinking as the hero rises and growing as they fall.\nDepict the motion clearly in one still illustration, using sequential poses or motion trails where useful.\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
     }
 ]
