@@ -1,7 +1,9 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
+import { flushSync } from 'react-dom';
 import type { Progress, Question } from './types';
+import { switchTheme } from './theme-transition';
 import { completeLesson, freshProgress, loadProgress, parseProgress, reviewConcept, STORAGE_KEY } from './progress';
-type Store={progress:Progress;warning:string|null;clearWarning:()=>void;complete:(id:string)=>void;attempt:(q:Question,answer:number,review?:boolean)=>void;milestone:(id:string)=>void;setResume:(id:string)=>void;setProject:(id:string)=>void;toggleTheme:()=>void;importData:(raw:string)=>void;reset:()=>void};
+type Store={progress:Progress;warning:string|null;clearWarning:()=>void;complete:(id:string)=>void;attempt:(q:Question,answer:number,review?:boolean)=>void;milestone:(id:string)=>void;setResume:(id:string)=>void;setProject:(id:string)=>void;toggleTheme:(origin?:{x:number;y:number})=>void;importData:(raw:string)=>void;reset:()=>void};
 const Context=createContext<Store|null>(null);
 // First visit (or reset) follows the OS setting; after that the saved choice wins.
 function systemTheme():Progress['theme']{try{return window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}catch{return'light';}}
@@ -12,7 +14,7 @@ export function ProgressProvider({children}:{children:ReactNode}){
  const value:Store={progress,warning,clearWarning:()=>setWarning(null),complete:id=>setProgress(p=>completeLesson(p,id)),attempt:(q,answer,isReview=false)=>setProgress(p=>{
   const correct=q.answer===answer;const old=p.attempts[q.id];let next={...p,attempts:{...p.attempts,[q.id]:{answer,correct,count:(old?.count||0)+1}}};
   if(isReview||(!correct&&!q.id.startsWith('pre-')))next=reviewConcept(next,q.concept,correct);return next;
- }),milestone:id=>setProgress(p=>({...p,milestones:p.milestones.includes(id)?p.milestones.filter(x=>x!==id):[...p.milestones,id]})),setResume:id=>setProgress(p=>p.resume===id?p:{...p,resume:id}),setProject:id=>setProgress(p=>({...p,currentProject:id})),toggleTheme:()=>setProgress(p=>({...p,theme:p.theme==='dark'?'light':'dark'})),importData:raw=>{setProgress(parseProgress(raw));setWarning(null);},reset:()=>{setProgress(freshProgress(systemTheme()));setWarning(null);}};
+ }),milestone:id=>setProgress(p=>({...p,milestones:p.milestones.includes(id)?p.milestones.filter(x=>x!==id):[...p.milestones,id]})),setResume:id=>setProgress(p=>p.resume===id?p:{...p,resume:id}),setProject:id=>setProgress(p=>({...p,currentProject:id})),toggleTheme:origin=>{const next=progress.theme==='dark'?'light':'dark';switchTheme(()=>{document.documentElement.dataset.theme=next;flushSync(()=>setProgress(p=>({...p,theme:next})));},origin);},importData:raw=>{setProgress(parseProgress(raw));setWarning(null);},reset:()=>{setProgress(freshProgress(systemTheme()));setWarning(null);}};
  return <Context.Provider value={value}>{children}</Context.Provider>;
 }
 export function useProgress(){const context=useContext(Context);if(!context)throw new Error('Missing progress provider');return context;}
