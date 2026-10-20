@@ -49,7 +49,8 @@ describe('curriculum integrity',()=>{
    const ai=lesson.blocks.find(b=>b.type==='ai-fit');expect(ai?.type==='ai-fit'?ai.toolIds.length:0,id).toBeGreaterThanOrEqual(1);
    const prose=lesson.blocks.flatMap(b=>b.type==='prose'||b.type==='story'?b.paragraphs:[]).join(' ');
    expect(words(prose),id).toBeGreaterThanOrEqual(370);
-   expect(words(JSON.stringify(lesson.blocks)),id).toBeGreaterThanOrEqual(900);
+   // Artwork generation instructions are no longer part of the learner's chapter.
+   expect(words(JSON.stringify(lesson.blocks)),id).toBeGreaterThanOrEqual(750);
    expect(lesson.review.length,id).toBeGreaterThanOrEqual(2);
    for(const q of lesson.review){
     expect(q.id).toMatch(/-retrieve$/);expect(q.answer).toBeLessThan(q.options.length);expect(q.options.length).toBeGreaterThanOrEqual(3);
@@ -60,11 +61,11 @@ describe('curriculum integrity',()=>{
   }
  });
 
- it('gives every media slot a unique ID, a description, alt text, and a prompt',async()=>{
+ it('gives every media slot a unique ID, description, and alt text',async()=>{
   const slots=(await foundationLessons()).flatMap(l=>l.blocks.flatMap(b=>b.type==='media'?[b.media]:[]));
   expect(slots.length).toBeGreaterThanOrEqual(55);
   expect(new Set(slots.map(s=>s.id)).size).toBe(slots.length);
-  for(const s of slots){expect(s.description.length,s.id).toBeGreaterThan(30);expect(s.alt.length,s.id).toBeGreaterThan(10);expect(s.prompt?.length??0,s.id).toBeGreaterThan(30);}
+  for(const s of slots){expect(s.description.length,s.id).toBeGreaterThan(30);expect(s.alt.length,s.id).toBeGreaterThan(10);expect(s.prompt,s.id).toBeUndefined();}
  });
 
  it('resolves every tool, mechanic, and genre reference',async()=>{

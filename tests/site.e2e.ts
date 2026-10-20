@@ -18,10 +18,10 @@ test('homepage, theme, and responsive navigation',async({page})=>{
  await noSideScroll(page);
 });
 
-test('a story chapter: opener, media placeholder, game cards, quick check, hints, completion, and resume',async({page})=>{
+test('a story chapter: opener, artwork, game cards, quick check, hints, completion, and resume',async({page})=>{
  await page.goto('/#'+firstChapter);
  await expect(page.locator('.story-opener')).toContainText('Picture a schoolyard');
- const slot=page.locator('.media-slot').first();await expect(slot).toContainText('fg-01-hero');await slot.getByText('Generation prompt').click();await expect(slot.locator('.media-prompt p')).toContainText('Warm editorial illustration');
+ const artwork=page.locator('.media-figure img').first();await expect(artwork).toBeVisible();await expect(artwork).toHaveAttribute('src',/media\/fg-01-hero\.jpg$/);await expect(artwork).toHaveJSProperty('complete',true);expect(await artwork.evaluate((el:HTMLImageElement)=>el.naturalWidth)).toBeGreaterThan(0);await expect(page.getByText('Generation prompt',{exact:true})).toHaveCount(0);
  await expect(page.locator('.game-cards article')).toHaveCount(4);
  await expect(page.locator('.chapter-dots a')).toHaveCount(18);
  await expect(page.locator('.lesson-header')).toContainText('Chapter 1 of 18');

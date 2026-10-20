@@ -96,7 +96,7 @@ The Playwright configuration uses bundled Chromium and serves the production bui
 
 ### Media slots
 
-Chapters include `media` blocks with an ID, kind, aspect ratio, description, alt text, and a generation prompt. Without a `src`, the page shows a dashed placeholder describing what belongs there, with a copyable prompt. To fill a slot, save the file in `public/media/` and add `src: 'media/<file>'` to the slot in its chapter file (videos ending in `.mp4` or `.webm` render as looping video). Every prompt shares one style line in `src/data/foundations/media.ts`; edit it to restyle all prompts at once. Prompts describe original artwork, not screenshots of real games. The unlisted page `#/media` lists every slot as a production checklist.
+Chapter artwork is served locally from `public/media/` and connected by slot ID in `src/data/foundations/generated-media.json`. The unlisted page `#/media` previews the artwork. Production prompts are recorded in `public/media/generation.json`, separate from the learner-facing chapters. Motion illustrations are clearly captioned as stills.
 3. Add or connect concepts in `src/data/concepts.ts`, and link project milestones in `src/data/projects.ts`.
 4. Run the curriculum checks. Every published Godot lesson must contain substantive prose, a worked example, a model or simulation, practice, verification, explanatory feedback, and retrieval practice. Questions use zero-based answer indexes.
 
