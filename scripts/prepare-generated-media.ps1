@@ -28,13 +28,17 @@ $sources | ConvertTo-Json | Set-Content -LiteralPath $sourcePath -Encoding UTF8
 $provenance | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath $provenancePath -Encoding UTF8
 Write-Output ('Prepared ' + $sources.Count + ' images.')
 if ($Publish) {
-    if ($records.Count -ne 1) { throw 'Publish accepts exactly one image at a time.' }
+    if ($records.Count -lt 1 -or $records.Count -gt 3) { throw 'Publish accepts one to three images at a time.' }
     & npm.cmd run build
     if ($LASTEXITCODE -ne 0) { throw 'Build failed.' }
-    & node scripts/verify-generated-media.mjs $records[0].id
-    if ($LASTEXITCODE -ne 0) { throw 'Browser image verification failed.' }
+    & npm.cmd test
+    if ($LASTEXITCODE -ne 0) { throw 'Tests failed.' }
+    foreach ($record in $records) {
+        & node scripts/verify-generated-media.mjs $record.id
+        if ($LASTEXITCODE -ne 0) { throw ('Browser image verification failed: ' + $record.id) }
+    }
     & git add --all
-    & git commit -m ('Add generated chapter artwork: ' + $records[0].id)
+    & git commit -m ('Add chapter artwork: ' + (($records | ForEach-Object { $_.id }) -join ', '))
     if ($LASTEXITCODE -ne 0) { throw 'Commit failed.' }
     & git push origin main
     if ($LASTEXITCODE -ne 0) { throw 'Push failed.' }

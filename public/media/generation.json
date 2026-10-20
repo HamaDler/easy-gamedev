@@ -6,29 +6,39 @@
                                         {
                                             "value":  [
                                                           "@{value=System.Object[]; Count=2}",
-                                                          "@{id=fg-17-hero; mode=built-in imagegen; prompt=Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A side-view game level drawn like an architectâ€™s blueprint on cream paper: a safe start, a gentle first gap, a floating reward block, and progressively trickier platforms, with dotted arrows tracing the path.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark.}"
+                                                          "@{id=fg-17-guiding; mode=built-in imagegen; prompt=Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A dim stone corridor viewed from the playerâ€™s perspective, one warm glowing doorway at the far end, a gentle line of glowing coins leading toward it.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark.}"
                                                       ],
                                             "Count":  2
                                         },
                                         {
-                                            "id":  "fg-17-guiding",
+                                            "id":  "fg-18-hero",
                                             "mode":  "built-in imagegen",
-                                            "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A dim stone corridor viewed from the playerâ€™s perspective, one warm glowing doorway at the far end, a gentle line of glowing coins leading toward it.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+                                            "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: An illustrated treasure-map-style path winding from a glowing lightbulb, past a sketchbook, a tiny cottage, a busy workshop, a group of smiling testers, to a small rocket lifting off.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
                                         }
                                     ],
                           "Count":  2
                       },
                       {
-                          "id":  "fg-18-hero",
+                          "id":  "fg-18-playtest",
                           "mode":  "built-in imagegen",
-                          "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: An illustrated treasure-map-style path winding from a glowing lightbulb, past a sketchbook, a tiny cottage, a busy workshop, a group of smiling testers, to a small rocket lifting off.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+                          "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A developer sitting quietly behind a playtester, scribbling in a notebook, while the playtester leans toward a monitor with a puzzled, curious expression, warm desk lamp light.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
                       }
                   ],
         "Count":  2
     },
     {
-        "id":  "fg-18-playtest",
+        "id":  "fh-01-hero",
         "mode":  "built-in imagegen",
-        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A developer sitting quietly behind a playtester, scribbling in a notebook, while the playtester leans toward a monitor with a puzzled, curious expression, warm desk lamp light.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A 1950s science laboratory open day, visitors in period coats and hats crowding around a small round green oscilloscope screen where a glowing dot arcs over a short net line, two delighted players holding boxy aluminum controllers.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+    },
+    {
+        "id":  "fh-01-spacewar",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: Two early-1960s university students hunched over a large cabinet-sized computer with a small round screen showing two tiny wedge-shaped spaceships circling a bright central star, tape reels in the background.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+    },
+    {
+        "id":  "fh-02-hero",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A warm 1970s neighborhood bar at night, a small crowd gathered around a wood-grain arcade cabinet showing two white paddles and a square ball, a glowing jukebox and pinball machine in the background.\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
     }
 ]
