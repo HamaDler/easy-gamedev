@@ -6,29 +6,29 @@
                                         {
                                             "value":  [
                                                           "@{value=System.Object[]; Count=2}",
-                                                          "@{id=fg-03-hero; mode=built-in imagegen; prompt=Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: An exploded technical-drawing view of a chunky retro game cartridge, its inner parts floating outward: a gear, a paintbrush, a music note, a folded map, a speech bubble, and a controller.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark.}"
+                                                          "@{id=fg-02-nested-loops; mode=built-in imagegen; prompt=Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 1:1.\nPrimary request: Three concentric circular arrows; the smallest shows a tiny jumping figure, the middle shows a doorway and a treasure chest, the largest shows a sapling growing into a tree.\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark.}"
                                                       ],
                                             "Count":  2
                                         },
                                         {
-                                            "id":  "fg-02-nested-loops",
+                                            "id":  "fg-05-hero",
                                             "mode":  "built-in imagegen",
-                                            "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 1:1.\nPrimary request: Three concentric circular arrows; the smallest shows a tiny jumping figure, the middle shows a doorway and a treasure chest, the largest shows a sapling growing into a tree.\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+                                            "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A small round adventurer standing before an enormous open dictionary; on its pages, simple icons for jump, dash, climb, build, talk, and hide.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
                                         }
                                     ],
                           "Count":  2
                       },
                       {
-                          "id":  "fg-05-hero",
+                          "id":  "fg-03-systems-content",
                           "mode":  "built-in imagegen",
-                          "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A small round adventurer standing before an enormous open dictionary; on its pages, simple icons for jump, dash, climb, build, talk, and hide.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+                          "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A cozy workshop split down the middle: on the left one whimsical machine stamps out many varied little toys; on the right a craftsperson hand-carves a short row of unique wooden figurines.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
                       }
                   ],
         "Count":  2
     },
     {
-        "id":  "fg-03-systems-content",
+        "id":  "fg-05-mda",
         "mode":  "built-in imagegen",
-        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A cozy workshop split down the middle: on the left one whimsical machine stamps out many varied little toys; on the right a craftsperson hand-carves a short row of unique wooden figurines.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 4:3.\nPrimary request: A three-layer cake diagram: gears in the bottom layer, tiny figures interacting in the middle layer, expressive faces in the top layer; one arrow rising on the left and one descending on the right.\n\nKeep the explanatory arrangement precise and easy to read. Use small icons rather than written labels.\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
     }
 ]
