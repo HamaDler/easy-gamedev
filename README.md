@@ -35,13 +35,23 @@ Deploy the contents of `dist/`, including the generated chunks, illustration, fa
 
 ## What is published
 
-- **Game Development Foundations:** three complete lessons; the remainder is explicitly labeled as curriculum previews.
-- **Vibe Coding Browser Games:** three complete lessons; the remainder is explicitly labeled as curriculum previews.
-- **Vibe Coding Games with Godot and AI Assets:** 55 fully authored lessons, including an optional programming bridge, 2D action roguelite, shared production systems, AI workflows and assets, 3D third-person adventure, genre adaptations, release, and an independent final project.
-- Seven project plans with verifiable milestones and progressive hints; 30 searchable concepts; lesson quizzes and an expanding-interval review queue.
-- Eight 2D teaching simulations and four actual Three.js labs: transforms, cameras, raycasting, and navigation. All labs have accessible controls, and interactive canvas actions have button/slider alternatives.
+The site is aimed at **vibe coders**: people who make games by directing AI. Every topic follows the same pattern: the easy AI path first, free assets second, and a do-it-yourself option for when learners want more control.
 
-The site has a learning dashboard, course roadmaps, advisory prerequisites, editable/copyable AI prompts, project checklists, resume links, theme preferences, progress export/import, and a confirmed reset. The default theme is warm paper with clay accents and serif headings, inspired by Anthropic's editorial product style; the site's identity remains Vibe Coding Games. See `ASSETS.md` for generated-art provenance.
+- **Foundations (start here, fully written):** four story-driven courses in a documentary-narrator voice, 55 chapters in total.
+  - **F1 What Makes a Game** (18 chapters): loops, anatomy, genres, mechanics, controls, programming as a concept, engines, platforms, the AI crew (coding agents, MCP, generators), visual direction, characters, animation, sound, interfaces, story, level design, idea to release.
+  - **F2 History of Video Games** (12 chapters): from Tennis for Two to live services and AI tools, with timelines.
+  - **F3 2D & 2.5D Worlds** (12 chapters): sprites, cameras and parallax, isometric, tiles, level design, map structures, movement, combat, enemies, progression, procedural generation, case studies.
+  - **F4 3D Worlds** (13 chapters): space and transforms, first/third-person cameras, controls, models and materials, lighting, shaders, environments, 3D level design, world structure, animation, 3D mechanics, performance, case studies.
+- **Hands-on ladder (outlined, not yet written):** courses on one shared 1–5 difficulty scale. Level 1: Browser 2D and Godot 2D; Level 2: Browser 3D and a Godot platformer; Level 3: Godot roguelite; Level 4: Browser 3D exploration and Godot 3D adventure; Level 5: your own game. Unity and Unreal courses are listed as planned.
+- **Classic Godot (code-first):** the original 55-lesson GDScript course, kept available until the new Godot levels replace it. Its lessons will become their "do it yourself" sections.
+- **Libraries:** a mechanics library (135 mechanics in 13 families), a genre library (39 genres with origins and success stories), a toolkit of engines, agents, MCP servers, generators, free asset libraries and manual tools, and the concept library.
+- Fourteen interactive labs, including new isometric-projection and parallax labs.
+
+Each foundations chapter contains a narrated story opener, media slots, plain-language sections with diagrams, tables, timelines or labs, "Seen in real games" cards, a no-code activity, a "where AI fits" section with tool links and a copyable prompt, a collapsed "go deeper, without AI" section, two or three quick-check questions, and a recap with a teaser for the next chapter. Quiz options are shown in a stable shuffled order per question.
+
+Progress from the old Foundations and Browser Games lessons does not carry over: those lesson IDs were retired and are filtered out on load. Classic Godot progress is unchanged.
+
+The site has a learning dashboard, journey maps and chapter progress dots, course completion cards, advisory prerequisites, editable/copyable AI prompts, project checklists, resume links, theme preferences, progress export/import, and a confirmed reset. The default theme is warm paper with clay accents and serif headings, inspired by Anthropic's editorial product style; the site's identity remains Vibe Coding Games. See `ASSETS.md` for generated-art provenance.
 
 Website demos are teaching simulations. Godot exercises run in the learner's own editor. Coding agents and asset generators are external tools, not connected services.
 
@@ -80,8 +90,13 @@ The Playwright configuration uses bundled Chromium and serves the production bui
 
 `src/types.ts` defines `Course`, `Module`, `Lesson`, `Concept`, `Project`, and the discriminated `LessonBlock` union. Shared page renderers are in `src/App.tsx`; reusable lesson components are in `src/components/Learning.tsx`. Curriculum content is loaded on demand; Three.js is a separate lazy chunk.
 
-1. Register stable lesson/module IDs and metadata in `src/data/catalog.ts`. IDs also identify completion and resume state; keep existing IDs stable when editing a published lesson.
-2. Author a seed in the appropriate `godot-*.ts` or `intro.ts` file. `authored()` in `lesson-builder.ts` creates structured blocks from the individually written teaching, model, worked example, question, practice steps, hints, checks, optional AI prompt, and summary.
+1. Register stable lesson/module IDs and metadata in `src/data/catalog.ts`. IDs also identify completion and resume state; keep existing IDs stable when editing a published lesson. Each course has a `track` (`foundations`, `ladder`, or `classic`) and an `availability` (`available` or `planned`); ladder courses also set `engine`, `dimension`, and `level` (1–5).
+2. Author the content. Foundations chapters live in `src/data/foundations/` and use `storyChapter()` from `lesson-builder.ts`, which turns a seed (story, hero media, sections, real games, activity, AI path, go-deeper items, questions, summary, teaser) into blocks in a fixed order. Classic Godot lessons use `authored()`. Old intro lessons and projects are kept in `src/data/archive/` (excluded from type-checking) as source material for the ladder.
+3. Reference tools, mechanics, and genres by ID from `src/data/tools.ts`, `src/data/mechanics.ts`, and `src/data/genres.ts`. Tool entries record only a cost type (free, open source, free tier, paid) and a `checked` month, because prices change.
+
+### Media slots
+
+Chapters include `media` blocks with an ID, kind, aspect ratio, description, alt text, and a generation prompt. Without a `src`, the page shows a dashed placeholder describing what belongs there, with a copyable prompt. To fill a slot, save the file in `public/media/` and add `src: 'media/<file>'` to the slot in its chapter file (videos ending in `.mp4` or `.webm` render as looping video). Every prompt shares one style line in `src/data/foundations/media.ts`; edit it to restyle all prompts at once. Prompts describe original artwork, not screenshots of real games. The unlisted page `#/media` lists every slot as a production checklist.
 3. Add or connect concepts in `src/data/concepts.ts`, and link project milestones in `src/data/projects.ts`.
 4. Run the curriculum checks. Every published Godot lesson must contain substantive prose, a worked example, a model or simulation, practice, verification, explanatory feedback, and retrieval practice. Questions use zero-based answer indexes.
 

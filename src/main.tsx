@@ -4,6 +4,7 @@ import { HashRouter } from 'react-router-dom';
 import { App } from './App';
 import { ProgressProvider } from './state';
 import './styles.css';
+import './foundations.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode><HashRouter><ProgressProvider><App /></ProgressProvider></HashRouter></React.StrictMode>,
