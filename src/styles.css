@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+.mechanic-illustration{margin:0 0 36px}
+.mechanic-illustration img{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:5px}
+.mechanic-illustration figcaption{display:flex;justify-content:flex-end;margin-top:12px}
+
 /* Separate section copy from actions and keep lab controls clear of their canvas and notes. */
 .section-space > :is(h2,h3) + :is(.button-row,.tag-links,.course-progress){margin-top:16px}
 .section-space > .button-row + p{margin-top:12px}

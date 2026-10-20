@@ -1,5 +1,7 @@
 # Artwork provenance
 
+Mechanic illustrations use a separate minimal visual series: ivory paper, a terracotta capsule character, sage platforms, charcoal paths, and one core behavior per composition. Jump is the first reference. Generated originals and animation layers are in `public/assets/mechanics/source/`; prompts and the reusable style guide are in `public/assets/mechanics/generation.json`. Run `python scripts/animate-jump.py` with Pillow installed to rebuild the looping GIF and static JPEG. The page supports pausing and honors reduced-motion preferences.
+
 The ez gamedev logo was generated with the built-in imagegen tool. The transparent original is `public/assets/ez-gamedev-logo-source.png`; the optimized navbar and favicon asset is `public/assets/ez-gamedev-logo.png`. The final prompt is recorded in `public/assets/ez-gamedev-logo-generation.json`.
 
 Chapter illustrations use the built-in imagegen tool, original subjects, and the shared warm editorial palette. Optimized JPEGs live in `public/media/`; the exact final prompts and generation mode are recorded in `public/media/generation.json`. Chapter data retains accessible descriptions and alt text without generation instructions. The nine motion slots use explicitly captioned still illustrations.

@@ -12,6 +12,7 @@ import { courseProgress, dueConcepts } from './progress';
 import type { Course, Engine, Lesson, MechanicCategory, MediaSlot as MediaSlotData, Question, Tool } from './types';
 import { Diagram, MediaSlot, PromptCard, QuestionCard, RenderBlock } from './components/Learning';
 import { Demo } from './components/Demos';
+import { MechanicIllustration } from './components/MechanicIllustration';
 
 const engineNames:Record<Engine,string>={browser:'Browser',godot:'Godot',unity:'Unity',unreal:'Unreal'};
 const dimensionNames={'2d':'2D','3d':'3D','2d-3d':'2D & 3D'};
@@ -190,6 +191,7 @@ function Mechanics(){
 function MechanicPage(){
  const {mechanicId=''}=useParams();const m=mechanicById[mechanicId];if(!m)return <NotFound/>;const siblings=mechanics.filter(x=>x.category===m.category&&x.id!==m.id).slice(0,8);
  return <div className="page narrow-page"><Link className="breadcrumb" to="/mechanics"><Icon name="arrow-left"/>Mechanics library</Link><PageTitle eyebrow={`Mechanic · ${mechanicCategoryNames[m.category]}`} title={m.name} description={m.description}/>
+  <MechanicIllustration id={m.id}/>
   <section className="prose-section"><h2>Why designers use it</h2><p>{m.why}</p></section>
   <section className="section-space"><h3>Seen in</h3><ul>{m.examples.map(e=><li key={e}>{e}</li>)}</ul></section>
   <section className="section-space"><h3>Genres that use it</h3><div className="tag-links">{m.genres.map(id=><Link key={id} to={`/genres/${id}`}>{genreById[id].name} <Icon name="arrow-right"/></Link>)}</div></section>
