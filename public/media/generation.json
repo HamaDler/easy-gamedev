@@ -1,5 +1,12 @@
-﻿{
-    "id":  "fg-01-toy-puzzle-game",
-    "mode":  "built-in imagegen",
-    "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 21:9.\nPrimary request: Three side-by-side panels: a child stacking wooden blocks freely; a person placing the last piece of a jigsaw; two friends leaning over a board game while dice tumble in the air.\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
-}
+﻿[
+    {
+        "id":  "fg-01-toy-puzzle-game",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 21:9.\nPrimary request: Three side-by-side panels: a child stacking wooden blocks freely; a person placing the last piece of a jigsaw; two friends leaning over a board game while dice tumble in the air.\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+    },
+    {
+        "id":  "fg-02-hero",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A small round original creature racing through a simple neon maze, eating glowing dots, swerving away from a wobbly shadow creature, then the scene resets.\nCreate a single still illustration with ghosted poses or a sequence of poses that clearly communicates the movement. This is a still image, not an animation.\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+    }
+]
