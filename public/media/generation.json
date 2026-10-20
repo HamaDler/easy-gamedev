@@ -87,5 +87,20 @@
         "id":  "f2-09-alert",
         "mode":  "built-in imagegen",
         "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A sneaking hero behind a crate while a guard with a vision cone turns toward them, a small exclamation mark popping above the guardÃ¢â‚¬â„¢s head.\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
+    },
+    {
+        "id":  "f2-10-hero",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A treasure room in a 2D game with coins, gems, a heart container, a key, and a shining upgrade orb on pedestals, the hero gazing at them with delight.\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
+    },
+    {
+        "id":  "f2-10-economy",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 4:3.\nPrimary request: A plumbing-style diagram: coins pouring into a central jar from pipes labelled with icons for enemies and chests, and flowing out through pipes labelled with icons for a shop, an upgrade, and a repair hammer.\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
+    },
+    {
+        "id":  "f2-11-hero",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A whimsical machine with dials and a crank that prints out different dungeon maps, each unique, onto a long scroll of paper, while a designer adjusts a dial labelled with a seed icon.\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
     }
 ]
