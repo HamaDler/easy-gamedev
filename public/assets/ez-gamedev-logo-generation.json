@@ -1,0 +1,7 @@
+{
+  "mode": "built-in imagegen",
+  "prompt": "Use case: logo-brand. Create one polished standalone logo symbol for 'ez gamedev', a friendly game-development learning website. A compact, bold terracotta isometric building-block symbol, three interlocking chunky voxel blocks forming a small ascending playable platform with a subtle triangular play-shaped negative space. A single small muted sage square accent. Sophisticated minimal editorial identity; flat solid colors, crisp geometric edges, strong silhouette, very few shapes, legible at 32 pixels. Main terracotta #b85032, sage #687456. Center the symbol, tight composition with modest clear padding, square image. Transparent background. Symbol only: NO text, letters, wordmark, shadows, gradient, texture, scenery, border, mockup, or watermark. Must read as one cohesive iconic mark, not a scene.",
+  "original": "ez-gamedev-logo-source.png",
+  "web": "ez-gamedev-logo.png",
+  "transparent_background": true
+}

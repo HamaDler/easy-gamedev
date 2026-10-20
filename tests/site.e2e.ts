@@ -35,11 +35,11 @@ test('a story chapter: opener, artwork, game cards, quick check, hints, completi
  await page.getByRole('radio',{name:'A game, because it has graphics and sound',exact:true}).check();await page.getByRole('button',{name:'Check reasoning'}).first().click();await expect(page.getByText('A useful distinction.',{exact:true})).toBeVisible();
  await page.getByRole('button',{name:'Reveal first hint'}).click();await expect(page.getByText('Rules are often invisible until you break them',{exact:false})).toBeVisible();
  await page.getByText('Go deeper, without AI').click();await expect(page.locator('.go-deeper')).toContainText('A Theory of Fun');
- await page.getByRole('button',{name:'Mark lesson complete'}).click();await expect(page.getByRole('button',{name:'✓ Checkpoint complete'})).toBeDisabled();
- await page.reload();await expect(page.getByRole('button',{name:'✓ Checkpoint complete'})).toBeDisabled();await expect(page.locator('.chapter-dots a.done')).toHaveCount(1);
+ await page.getByRole('button',{name:'Mark lesson complete'}).click();await expect(page.getByRole('button',{name:'Checkpoint complete'})).toBeDisabled();
+ await page.reload();await expect(page.getByRole('button',{name:'Checkpoint complete'})).toBeDisabled();await expect(page.locator('.chapter-dots a.done')).toHaveCount(1);
  await page.goto('/#/learn');await expect(page.getByRole('heading',{name:'What is a game?',exact:true})).toBeVisible();
  const state=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!),key);expect(state.completed).toEqual(['fg-what-is-a-game']);expect(state.review.state).toBeDefined();
- await page.goto('/#/courses/f-game');await expect(page.locator('.journey a.done')).toHaveCount(1);await expect(page.getByRole('link',{name:'Continue course →'})).toBeVisible();
+ await page.goto('/#/courses/f-game');await expect(page.locator('.journey a.done')).toHaveCount(1);await expect(page.getByRole('link',{name:'Continue course'})).toBeVisible();
 });
 
 test('quiz options are shuffled but stable between visits',async({page})=>{
@@ -62,9 +62,9 @@ test('course ladder filters by engine and dimension',async({page})=>{
 
 test('libraries: mechanics, genres, toolkit, and the ecosystem redirect',async({page})=>{
  await page.goto('/#/mechanics');await page.getByRole('textbox',{name:'Search mechanics'}).fill('coyote');await page.locator('.library-grid').getByRole('link').filter({hasText:'Coyote time'}).click();await expect(page.getByRole('heading',{name:'Coyote time',exact:true})).toBeVisible();
- await page.getByRole('link',{name:'Platformer ↗'}).click();await expect(page.getByRole('heading',{name:'Platformer',exact:true})).toBeVisible();await expect(page.getByText('A success story')).toBeVisible();
+ await page.getByRole('link',{name:'Platformer',exact:true}).click();await expect(page.getByRole('heading',{name:'Platformer',exact:true})).toBeVisible();await expect(page.getByText('A success story')).toBeVisible();
  await page.goto('/#/ecosystem');await expect(page.getByRole('heading',{name:'Easy path first. Options second.'})).toBeVisible();
- await page.getByRole('button',{name:'Do it yourself',exact:true}).click();await expect(page.getByRole('link',{name:'Blender ↗'})).toBeVisible();await expect(page.getByRole('link',{name:'Claude Code ↗'})).toHaveCount(0);
+ await page.getByRole('button',{name:'Do it yourself',exact:true}).click();await expect(page.getByRole('link',{name:'Blender',exact:true})).toBeVisible();await expect(page.getByRole('link',{name:'Claude Code',exact:true})).toHaveCount(0);
 });
 
 test('media checklist lists every slot',async({page})=>{
@@ -89,7 +89,7 @@ test('review expands correct intervals and repeats missed concepts sooner',async
 
 test('export, invalid import, and reset confirmation',async({page})=>{
  await page.goto('/#/courses/f-game/lessons/fg-core-loop');await page.getByRole('button',{name:'Mark lesson complete'}).click();await page.goto('/#/progress');
- const downloaded=page.waitForEvent('download');await page.getByRole('button',{name:'Export progress',exact:true}).click();expect((await downloaded).suggestedFilename()).toBe('vibe-coding-games-progress.json');
+ const downloaded=page.waitForEvent('download');await page.getByRole('button',{name:'Export progress',exact:true}).click();expect((await downloaded).suggestedFilename()).toBe('ez-gamedev-progress.json');
  await page.getByLabel('Import progress JSON').setInputFiles({name:'invalid.json',mimeType:'application/json',buffer:Buffer.from('{')});await expect(page.getByRole('status')).toContainText(/JSON|Unexpected|property/i);
  let stored=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!),key);expect(stored.completed).toContain('fg-core-loop');
  await page.getByRole('button',{name:'Reset local progress',exact:true}).click();await page.getByRole('button',{name:'Keep progress',exact:true}).click();await page.getByRole('button',{name:'Reset local progress',exact:true}).click();await page.getByRole('button',{name:'Reset progress',exact:true}).click();stored=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!),key);expect(stored.completed).toEqual([]);

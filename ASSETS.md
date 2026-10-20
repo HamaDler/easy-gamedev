@@ -1,5 +1,7 @@
 # Artwork provenance
 
+The ez gamedev logo was generated with the built-in imagegen tool. The transparent original is `public/assets/ez-gamedev-logo-source.png`; the optimized navbar and favicon asset is `public/assets/ez-gamedev-logo.png`. The final prompt is recorded in `public/assets/ez-gamedev-logo-generation.json`.
+
 Chapter illustrations use the built-in imagegen tool, original subjects, and the shared warm editorial palette. Optimized JPEGs live in `public/media/`; the exact final prompts and generation mode are recorded in `public/media/generation.json`. Chapter data retains accessible descriptions and alt text without generation instructions. The nine motion slots use explicitly captioned still illustrations.
 
 The homepage illustration was generated using the **built-in imagegen tool**, following the imagegen skill. It is served locally as `public/assets/game-world.png` (1536 × 1024). The original is retained at `C:/Users/7amad/.codex/generated_images/01a11b73-2f5c-72d3-acde-832973815cd9/exec-923aba9a-ecfa-490f-954f-7eb7bc87616a.png`.

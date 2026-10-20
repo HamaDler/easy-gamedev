@@ -1,4 +1,4 @@
-# Vibe Coding Games
+# ez gamedev
 
 A static learning platform built with React, TypeScript, Vite, Tailwind CSS, React Router, and lazy-loaded Three.js. No backend, account, API key, or paid service is required. Learning progress stays in the browser.
 
@@ -27,7 +27,7 @@ The production files are in `dist/`. Serve that folder with any static host. Rou
 The default Vite base is `./`, which supports deployment beneath a subdirectory. To choose an explicit path, set `VITE_BASE_PATH` before building. PowerShell example:
 
 ```powershell
-$env:VITE_BASE_PATH = '/vibe-coding-games/'
+$env:VITE_BASE_PATH = '/ez-gamedev/'
 npm run build
 ```
 
@@ -51,7 +51,7 @@ Each foundations chapter contains a narrated story opener, media slots, plain-la
 
 Progress from the old Foundations and Browser Games lessons does not carry over: those lesson IDs were retired and are filtered out on load. Classic Godot progress is unchanged.
 
-The site has a learning dashboard, journey maps and chapter progress dots, course completion cards, advisory prerequisites, editable/copyable AI prompts, project checklists, resume links, theme preferences, progress export/import, and a confirmed reset. The default theme is warm paper with clay accents and serif headings, inspired by Anthropic's editorial product style; the site's identity remains Vibe Coding Games. See `ASSETS.md` for generated-art provenance.
+The site has a learning dashboard, journey maps and chapter progress dots, course completion cards, advisory prerequisites, editable/copyable AI prompts, project checklists, resume links, theme preferences, progress export/import, and a confirmed reset. The default theme is warm paper with clay accents and serif headings, inspired by Anthropic's editorial product style; the site's identity remains ez gamedev. See `ASSETS.md` for generated-art provenance.
 
 Website demos are teaching simulations. Godot exercises run in the learner's own editor. Coding agents and asset generators are external tools, not connected services.
 

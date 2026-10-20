@@ -4,15 +4,16 @@ import { useProgress } from '../state';
 import { displayOrder } from '../shuffle';
 import { costNames, toolById } from '../data/tools';
 import { Demo } from './Demos';
+import { Icon } from './Icon';
 
-export function Diagram({title,nodes,note}:{title:string;nodes:string[];note?:string}){return <figure className="mental-model"><figcaption className="eyebrow">{title}</figcaption><ol>{nodes.map((node,i)=><li key={i}><span>{node}</span>{i<nodes.length-1&&<b aria-hidden="true">→</b>}</li>)}</ol>{note&&<p className="fine">{note}</p>}</figure>;}
+export function Diagram({title,nodes,note}:{title:string;nodes:string[];note?:string}){return <figure className="mental-model"><figcaption className="eyebrow">{title}</figcaption><ol>{nodes.map((node,i)=><li key={i}><span>{node}</span>{i<nodes.length-1&&<Icon name="arrow-right" className="flow-arrow"/>}</li>)}</ol>{note&&<p className="fine">{note}</p>}</figure>;}
 
 export function QuestionCard({question,review=false,onCheck}:{question:Question;review?:boolean;onCheck?:()=>void}){
  const {progress,attempt}=useProgress();const saved=review?undefined:progress.attempts[question.id];const [selected,setSelected]=useState<number|null>(saved?.answer??null);const [submitted,setSubmitted]=useState(saved!==undefined);const correct=selected===question.answer;
  // Self-check questions keep their authored order; everything else is shuffled stably per question.
  const order=question.id.startsWith('pre-')?question.options.map((_,i)=>i):displayOrder(question.id,question.options.length);
  const eyebrow=question.id.startsWith('pre-')?'Self-check':review?'Retrieve before you reveal':'Quick check';
- return <section className="question-panel"><span className="eyebrow">{eyebrow}</span><h3>{question.prompt}</h3><fieldset><legend className="sr-only">Choose an answer</legend>{order.map(i=>{const option=question.options[i];return <label key={option} className={`answer-option ${submitted&&i===question.answer?'correct':''} ${submitted&&selected===i&&!correct?'incorrect':''}`}><input type="radio" name={question.id} value={i} checked={selected===i} disabled={submitted} onChange={()=>setSelected(i)}/><span>{option}</span>{submitted&&i===question.answer&&<span aria-label="Correct answer">✓</span>}</label>;})}</fieldset>{submitted?<div className="answer-feedback" aria-live="polite"><strong>{correct?'That’s it.':'A useful distinction.'}</strong><p>{question.explanation}</p>{!review&&<button className="text-button" onClick={()=>{setSubmitted(false);setSelected(null);}}>Try again</button>}</div>:<button className="button small" disabled={selected===null} onClick={()=>{if(selected===null)return;attempt(question,selected,review);setSubmitted(true);onCheck?.();}}>Check reasoning</button>}</section>;
+ return <section className="question-panel"><span className="eyebrow">{eyebrow}</span><h3>{question.prompt}</h3><fieldset><legend className="sr-only">Choose an answer</legend>{order.map(i=>{const option=question.options[i];return <label key={option} className={`answer-option ${submitted&&i===question.answer?'correct':''} ${submitted&&selected===i&&!correct?'incorrect':''}`}><input type="radio" name={question.id} value={i} checked={selected===i} disabled={submitted} onChange={()=>setSelected(i)}/><span>{option}</span>{submitted&&i===question.answer&&<span role="img" aria-label="Correct answer"><Icon name="check"/></span>}</label>;})}</fieldset>{submitted?<div className="answer-feedback" aria-live="polite"><strong>{correct?'That’s it.':'A useful distinction.'}</strong><p>{question.explanation}</p>{!review&&<button className="text-button" onClick={()=>{setSubmitted(false);setSelected(null);}}>Try again</button>}</div>:<button className="button small" disabled={selected===null} onClick={()=>{if(selected===null)return;attempt(question,selected,review);setSubmitted(true);onCheck?.();}}>Check reasoning</button>}</section>;
 }
 
 async function copyText(text:string){try{await navigator.clipboard.writeText(text);return true;}catch{return false;}}
@@ -31,7 +32,7 @@ export function MediaSlot({media}:{media:MediaSlotData}){
 }
 
 export function ToolChips({ids}:{ids:string[]}){return <div className="tool-chips">{ids.map(id=>{const tool=toolById[id];if(!tool)return null;return <a key={id} href={tool.url} target="_blank" rel="noreferrer" className={`tool-chip path-${tool.path}`}><strong>{tool.name}</strong><span>{costNames[tool.cost]}</span></a>;})}</div>;}
-function DeeperLink({item}:{item:DeeperItem}){const tool=item.toolId?toolById[item.toolId]:undefined;const url=item.url||tool?.url;return <li><strong>{url?<a href={url} target="_blank" rel="noreferrer">{item.label} ↗</a>:item.label}</strong>{tool&&<span className="tag">{costNames[tool.cost]}</span>}<p>{item.detail}</p></li>;}
+function DeeperLink({item}:{item:DeeperItem}){const tool=item.toolId?toolById[item.toolId]:undefined;const url=item.url||tool?.url;return <li><strong>{url?<a href={url} target="_blank" rel="noreferrer">{item.label} <Icon name="external"/></a>:item.label}</strong>{tool&&<span className="tag">{costNames[tool.cost]}</span>}<p>{item.detail}</p></li>;}
 
 export function RenderBlock({block}:{block:LessonBlock}){switch(block.type){
  case 'prose':return <section className="prose-section"><h2>{block.title}</h2>{block.paragraphs.map((p,i)=><p key={i}>{p}</p>)}</section>;

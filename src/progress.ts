@@ -11,7 +11,7 @@ function strings(x:unknown):x is string[]{return Array.isArray(x)&&x.every(v=>ty
 function finite(x:unknown):x is number{return typeof x==='number'&&Number.isFinite(x)&&x>=0;}
 export function parseProgress(raw:string):Progress {
  const x:unknown=JSON.parse(raw);
- if(!plain(x)||x.version!==1||!strings(x.completed)||!strings(x.milestones)||!strings(x.reviewDays)||!plain(x.attempts)||!plain(x.review)||(x.theme!=='dark'&&x.theme!=='light')||(x.resume!==null&&typeof x.resume!=='string')||(x.currentProject!==null&&typeof x.currentProject!=='string')) throw new Error('This file is not a valid Vibe Coding Games progress export.');
+ if(!plain(x)||x.version!==1||!strings(x.completed)||!strings(x.milestones)||!strings(x.reviewDays)||!plain(x.attempts)||!plain(x.review)||(x.theme!=='dark'&&x.theme!=='light')||(x.resume!==null&&typeof x.resume!=='string')||(x.currentProject!==null&&typeof x.currentProject!=='string')) throw new Error('This file is not a valid ez gamedev progress export.');
  const p=freshProgress();
  p.completed=[...new Set(x.completed.filter(id=>metaById[id]?.status==='complete'))];
  p.milestones=[...new Set(x.milestones.filter(id=>milestoneIds.has(id)))];
