@@ -72,7 +72,7 @@ export const gameSeedsB: ChapterSeed[] = [
   ]},
   {title:'Writing a style guide',paragraphs:[
    'A style guide can be a single page: five words describing the mood, your palette, the camera angle, the outline style, the level of detail, and two or three reference images. For AI generators, turn it into a reusable prompt fragment you add to every request. For free packs, use it to reject assets that do not fit.',
-   'This site’s own illustrations work the same way: every image placeholder includes the same style sentence, so whoever generates them, a person or a model, aims at one look.',
+   'This site’s own illustrations work the same way: they share one art direction, so whoever creates them, a person or a model, aims at one look.',
   ]},
  ],
  games:[

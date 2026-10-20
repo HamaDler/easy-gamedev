@@ -50,10 +50,6 @@
 .media-frame{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-height:180px;padding:22px;border:2px dashed var(--line);border-radius:8px;background:repeating-linear-gradient(135deg,var(--surface),var(--surface) 14px,var(--bg) 14px,var(--bg) 28px);text-align:center}
 .media-frame p{max-width:58ch;font-size:.88rem;color:var(--secondary);background:var(--bg);padding:8px 12px;border-radius:4px}
 .media-kind{font-family:"SFMono-Regular",Consolas,monospace;font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--sage);background:var(--bg);padding:3px 8px;border-radius:3px}
-.media-id{font-size:.68rem;color:var(--muted);background:var(--bg);padding:2px 6px;border-radius:3px}
-.media-prompt{margin-top:10px;font-size:.82rem}
-.media-prompt summary{cursor:pointer;color:var(--sage);font-weight:550}
-.media-prompt p{margin:10px 0;font-size:.82rem;line-height:1.6;font-family:Consolas,monospace;color:var(--secondary)}
 .media-figure{margin:28px 0}
 .media-figure img,.media-figure video{display:block;width:100%;height:auto;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
 .media-figure figcaption{margin-top:8px}

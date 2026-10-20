@@ -65,7 +65,7 @@ describe('curriculum integrity',()=>{
   const slots=(await foundationLessons()).flatMap(l=>l.blocks.flatMap(b=>b.type==='media'?[b.media]:[]));
   expect(slots.length).toBeGreaterThanOrEqual(55);
   expect(new Set(slots.map(s=>s.id)).size).toBe(slots.length);
-  for(const s of slots){expect(s.description.length,s.id).toBeGreaterThan(30);expect(s.alt.length,s.id).toBeGreaterThan(10);expect(s.prompt,s.id).toBeUndefined();}
+  for(const s of slots){expect(s.description.length,s.id).toBeGreaterThan(30);expect(s.alt.length,s.id).toBeGreaterThan(10);expect('prompt' in s,s.id).toBe(false);}
  });
 
  it('resolves every tool, mechanic, and genre reference',async()=>{

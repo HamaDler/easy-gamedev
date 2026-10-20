@@ -2,7 +2,7 @@ export type DemoKind = 'coordinates' | 'loop' | 'velocity' | 'collision' | 'stat
 export type Question = { id: string; prompt: string; options: string[]; answer: number; explanation: string; concept: string };
 
 /** A picture or clip that belongs in a chapter. Without `src` it renders as a described placeholder. */
-export type MediaSlot = { id: string; kind: 'image' | 'video' | 'gif' | 'diagram'; aspect: '16:9' | '4:3' | '3:2' | '1:1' | '21:9'; description: string; alt: string; prompt?: string; src?: string; credit?: string };
+export type MediaSlot = { id: string; kind: 'image' | 'video' | 'gif' | 'diagram'; aspect: '16:9' | '4:3' | '3:2' | '1:1' | '21:9'; description: string; alt: string; src?: string; credit?: string };
 export type GameExample = { title: string; year: number; platform: string; note: string };
 export type TimelineEvent = { year: number; title: string; text: string };
 export type DeeperItem = { label: string; detail: string; url?: string; toolId?: string };

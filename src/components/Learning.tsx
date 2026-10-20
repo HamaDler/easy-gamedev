@@ -23,11 +23,11 @@ export function Exercise({block}:{block:Extract<LessonBlock,{type:'exercise'}>})
 export function CodeBlock({block}:{block:Extract<LessonBlock,{type:'code'}>}){const [copied,setCopied]=useState(false);return <figure className="code-block"><figcaption><span>{block.title}</span><button className="text-button" onClick={async()=>setCopied(await copyText(block.code))}>{copied?'Copied':'Copy'}</button></figcaption><pre tabIndex={0}><code>{block.code}</code></pre><p>{block.explanation}</p></figure>;}
 
 const mediaKindNames:Record<MediaSlotData['kind'],string>={image:'Image',video:'Video',gif:'Animation',diagram:'Diagram'};
-/** Shows the finished image or video when `src` is set, otherwise a described placeholder with a copyable generation prompt. */
+/** Shows local chapter artwork or a description while an asset is being prepared. */
 export function MediaSlot({media}:{media:MediaSlotData}){
- const [message,setMessage]=useState('');const ratio=media.aspect.replace(':',' / ');
+ const ratio=media.aspect.replace(':',' / ');
  if(media.src){const url=`${import.meta.env.BASE_URL}${media.src}`;const isVideo=media.kind==='video'||/\.(mp4|webm)$/i.test(media.src);return <figure className="media-figure">{isVideo?<video src={url} aria-label={media.alt} autoPlay muted loop playsInline style={{aspectRatio:ratio}}/>:<img src={url} alt={media.alt} loading="lazy" style={{aspectRatio:ratio}}/>}{media.credit&&<figcaption className="fine">{media.credit}</figcaption>}</figure>;}
- return <figure className="media-slot" aria-label={`Media placeholder: ${media.alt}`}><div className="media-frame" style={{aspectRatio:ratio}}><span className="media-kind">{mediaKindNames[media.kind]} · {media.aspect}</span><p>{media.description}</p><code className="media-id">{media.id}</code></div>{media.prompt&&<details className="media-prompt"><summary>Generation prompt</summary><p>{media.prompt}</p><button className="text-button" onClick={async()=>setMessage(await copyText(media.prompt||'')?'Copied':'Select the text and copy it manually.')}>Copy prompt</button><span className="fine" role="status"> {message}</span></details>}</figure>;
+ return <figure className="media-slot" aria-label={media.alt}><div className="media-frame" style={{aspectRatio:ratio}}><span className="media-kind">{mediaKindNames[media.kind]} · {media.aspect}</span><p>{media.description}</p></div></figure>;
 }
 
 export function ToolChips({ids}:{ids:string[]}){return <div className="tool-chips">{ids.map(id=>{const tool=toolById[id];if(!tool)return null;return <a key={id} href={tool.url} target="_blank" rel="noreferrer" className={`tool-chip path-${tool.path}`}><strong>{tool.name}</strong><span>{costNames[tool.cost]}</span></a>;})}</div>;}

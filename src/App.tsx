@@ -232,7 +232,7 @@ function MediaChecklist(){
  if(lessons===null)return <div className="page loading">Collecting media slots…</div>;
  const slots=lessons.flatMap(l=>l.blocks.filter((b):b is {type:'media';media:MediaSlotData}=>b.type==='media').map(b=>({lesson:l,media:b.media})));
  const finished=slots.filter(s=>s.media.src).length;
- return <div className="page"><PageTitle eyebrow="PRODUCTION CHECKLIST" title="Media slots" description={`${finished} of ${slots.length} slots have media. To fill one, save the file in public/media/ and set the slot’s src in its chapter file, for example src: 'media/${slots[0]?.media.id??'slot-id'}.png'. Every generation prompt shares the style line in src/data/foundations/media.ts.`}/>
+ return <div className="page"><PageTitle eyebrow="COURSE ARTWORK" title="Media slots" description={`${finished} of ${slots.length} chapter illustrations are ready. Expand an entry to preview the artwork or open its chapter to see it in context.`}/>
   {foundationCourses.map(c=><section key={c.id} className="library-group"><h2>{c.title}</h2>{slots.filter(s=>s.lesson.courseId===c.id).map(({lesson,media})=><details key={media.id} className="disclosure media-row"><summary><span className={`checkpoint ${media.src?'filled':''}`} aria-label={media.src?'Has media':'Needs media'}>{media.src?'✓':''}</span><code>{media.id}</code><span>{lesson.title}</span></summary><MediaSlot media={media}/><p className="fine">Alt text: {media.alt}</p><Link className="text-link" to={`/courses/${lesson.courseId}/lessons/${lesson.id}`}>Open chapter →</Link></details>)}</section>)}
  </div>;
 }
