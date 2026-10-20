@@ -162,5 +162,20 @@
         "id":  "f3-05-hero",
         "mode":  "built-in imagegen",
         "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 21:9.\nPrimary request: The same simple 3D room shown three times: lit with cold overhead light, with a single warm lamp in darkness, and with golden sunlight streaming through a window.\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
+    },
+    {
+        "id":  "f3-05-fog",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A misty forest path at dawn with beams of light slanting through the trees, distant trees fading into soft blue fog, and a warm lantern glow on a cottage at the end of the path.\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
+    },
+    {
+        "id":  "f3-06-hero",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: The same stylized tree shown in four styles side by side: realistic, cel-shaded cartoon with bold outlines, soft watercolour, and glowing hologram wireframe.\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
+    },
+    {
+        "id":  "f3-06-dissolve",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A small stone statue dissolving away from bottom to top with a glowing orange edge, revealing nothing behind it, then reforming.\nDepict the motion clearly in one still illustration, using sequential poses or motion trails where useful.\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
     }
 ]

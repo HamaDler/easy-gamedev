@@ -91,5 +91,8 @@
     "f3-03-shadow":  "media/f3-03-shadow.jpg",
     "f3-04-hero":  "media/f3-04-hero.jpg",
     "f3-04-uv":  "media/f3-04-uv.jpg",
-    "f3-05-hero":  "media/f3-05-hero.jpg"
+    "f3-05-hero":  "media/f3-05-hero.jpg",
+    "f3-05-fog":  "media/f3-05-fog.jpg",
+    "f3-06-hero":  "media/f3-06-hero.jpg",
+    "f3-06-dissolve":  "media/f3-06-dissolve.jpg"
 }
