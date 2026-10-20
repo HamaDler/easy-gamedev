@@ -4,7 +4,7 @@ import { conceptById } from './data/concepts';
 import { projectById, projects } from './data/projects';
 export const STORAGE_KEY='vibe-coding-games:v1';
 export const DAY=86_400_000;
-export function freshProgress():Progress{return{version:1,completed:[],attempts:{},milestones:[],review:{},theme:'light',resume:null,currentProject:null,reviewDays:[]};}
+export function freshProgress(theme:Progress['theme']='light'):Progress{return{version:1,completed:[],attempts:{},milestones:[],review:{},theme,resume:null,currentProject:null,reviewDays:[]};}
 const milestoneIds=new Set(projects.flatMap(p=>p.milestones.map(m=>m.id)));
 function plain(x:unknown):x is Record<string,unknown>{return typeof x==='object'&&x!==null&&!Array.isArray(x);}
 function strings(x:unknown):x is string[]{return Array.isArray(x)&&x.every(v=>typeof v==='string');}
@@ -29,8 +29,8 @@ export function parseProgress(raw:string):Progress {
  }
  return p;
 }
-export function loadProgress(storage:Pick<Storage,'getItem'>):{progress:Progress;warning:string|null}{
- try{const raw=storage.getItem(STORAGE_KEY);return{progress:raw?parseProgress(raw):freshProgress(),warning:null};}catch{return{progress:freshProgress(),warning:'Your saved progress could not be read. You can continue locally or import a previous export.'};}
+export function loadProgress(storage:Pick<Storage,'getItem'>,defaultTheme:Progress['theme']='light'):{progress:Progress;warning:string|null}{
+ try{const raw=storage.getItem(STORAGE_KEY);return{progress:raw?parseProgress(raw):freshProgress(defaultTheme),warning:null};}catch{return{progress:freshProgress(defaultTheme),warning:'Your saved progress could not be read. You can continue locally or import a previous export.'};}
 }
 export function completeLesson(p:Progress,id:string,now=Date.now()):Progress{
  const lesson=metaById[id];if(!lesson||lesson.status!=='complete'||p.completed.includes(id))return p;

@@ -8,6 +8,13 @@ const firstChapter='/courses/f-game/lessons/fg-what-is-a-game';
 async function range(control:Locator,value:number){await control.evaluate((el,value)=>{const input=el as HTMLInputElement;const setter=Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value')!.set!;setter.call(input,String(value));input.dispatchEvent(new Event('input',{bubbles:true}));input.dispatchEvent(new Event('change',{bubbles:true}));},value);}
 async function noSideScroll(page:import('@playwright/test').Page){expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
 
+test('first visit follows the OS color scheme',async({browser})=>{
+ const context=await browser.newContext({colorScheme:'dark'});const page=await context.newPage();
+ await page.goto('/');await expect(page.locator('html')).toHaveAttribute('data-theme','dark');
+ await expect(page.locator('meta[name="theme-color"]')).toHaveAttribute('content','#242320');
+ await expect(page.getByRole('button',{name:'Switch to light mode'})).toBeVisible();await context.close();
+});
+
 test('homepage, theme, and responsive navigation',async({page})=>{
  await page.goto('/');await expect(page.getByRole('heading',{name:'Make games with AI. Know what to ask for.'})).toBeVisible();
  await expect(page.locator('.course-grid .course-card')).toHaveCount(4);
