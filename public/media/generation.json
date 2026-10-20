@@ -6,29 +6,29 @@
                                         {
                                             "value":  [
                                                           "@{value=System.Object[]; Count=2}",
-                                                          "@{id=fg-15-menu; mode=built-in imagegen; prompt=Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A friendly game settings screen on a living-room TV, large clear rounded typography, sliders for music and effects, toggles for subtitles and reduced screen shake, one highlighted button.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark.}"
+                                                          "@{id=fg-16-hero; mode=built-in imagegen; prompt=Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: An explorer kneeling in a ruined moonlit stone hall, holding up a softly glowing ring; faded banners, a toppled statue, and a half-buried shield around them suggest a forgotten story.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark.}"
                                                       ],
                                             "Count":  2
                                         },
                                         {
-                                            "id":  "fg-16-hero",
+                                            "id":  "fg-16-branches",
                                             "mode":  "built-in imagegen",
-                                            "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: An explorer kneeling in a ruined moonlit stone hall, holding up a softly glowing ring; faded banners, a toppled statue, and a half-buried shield around them suggest a forgotten story.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+                                            "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 4:3.\nPrimary request: A story-branch map drawn as a river delta seen from above, one spring splitting into streams that sometimes rejoin, flowing into three distinct pools marked with a sun, a moon, and a star icon.\n\nKeep the explanatory arrangement precise and easy to read. Use small icons rather than written labels.\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
                                         }
                                     ],
                           "Count":  2
                       },
                       {
-                          "id":  "fg-16-branches",
+                          "id":  "fg-17-hero",
                           "mode":  "built-in imagegen",
-                          "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 4:3.\nPrimary request: A story-branch map drawn as a river delta seen from above, one spring splitting into streams that sometimes rejoin, flowing into three distinct pools marked with a sun, a moon, and a star icon.\n\nKeep the explanatory arrangement precise and easy to read. Use small icons rather than written labels.\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+                          "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A side-view game level drawn like an architectâ€™s blueprint on cream paper: a safe start, a gentle first gap, a floating reward block, and progressively trickier platforms, with dotted arrows tracing the path.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
                       }
                   ],
         "Count":  2
     },
     {
-        "id":  "fg-17-hero",
+        "id":  "fg-17-guiding",
         "mode":  "built-in imagegen",
-        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A side-view game level drawn like an architectâ€™s blueprint on cream paper: a safe start, a gentle first gap, a floating reward block, and progressively trickier platforms, with dotted arrows tracing the path.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A dim stone corridor viewed from the playerâ€™s perspective, one warm glowing doorway at the far end, a gentle line of glowing coins leading toward it.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
     }
 ]
