@@ -6,29 +6,29 @@
                                         {
                                             "value":  [
                                                           "@{value=System.Object[]; Count=2}",
-                                                          "@{id=fg-10-mcp; mode=built-in imagegen; prompt=Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A friendly robot at the center with three cables running to a game-editor window, a web browser window, and a 3D sculpting window, each cable passing through a small labelled adapter box.\n\nKeep the explanatory arrangement precise and easy to read. Use small icons rather than written labels.\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark.}"
+                                                          "@{id=fg-09-contexts; mode=built-in imagegen; prompt=Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 4:3.\nPrimary request: Four small vignettes in a grid: a commuter smiling at a phone on a bus, a family on a sofa with gamepads, a person at a desk with a mouse, someone in a headset reaching into the air.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark.}"
                                                       ],
                                             "Count":  2
                                         },
                                         {
-                                            "id":  "fg-09-contexts",
+                                            "id":  "fg-11-greyscale",
                                             "mode":  "built-in imagegen",
-                                            "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 4:3.\nPrimary request: Four small vignettes in a grid: a commuter smiling at a phone on a bus, a family on a sofa with gamepads, a person at a desk with a mouse, someone in a headset reaching into the air.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+                                            "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 21:9.\nPrimary request: A small side-view forest game scene shown twice side by side, once in full warm color and once in pure greyscale; in both, the hero and a glowing gem clearly stand out from a darker, quieter background.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
                                         }
                                     ],
                           "Count":  2
                       },
                       {
-                          "id":  "fg-11-greyscale",
+                          "id":  "fg-10-hero",
                           "mode":  "built-in imagegen",
-                          "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 21:9.\nPrimary request: A small side-view forest game scene shown twice side by side, once in full warm color and once in pure greyscale; in both, the hero and a glowing gem clearly stand out from a darker, quieter background.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+                          "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A cheerful human director in a folding chair with a megaphone, guiding a small crew of friendly robots: one typing at a keyboard, one painting a canvas, one holding a microphone, one sculpting a tiny 3D figure.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
                       }
                   ],
         "Count":  2
     },
     {
-        "id":  "fg-10-hero",
+        "id":  "fg-11-hero",
         "mode":  "built-in imagegen",
-        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A cheerful human director in a folding chair with a megaphone, guiding a small crew of friendly robots: one typing at a keyboard, one painting a canvas, one holding a microphone, one sculpting a tiny 3D figure.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A designer stepping back to admire a cork mood board covered in color swatches, pencil sketches, fabric and stone texture samples, and small doodles, warm studio light.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
     }
 ]
