@@ -6,29 +6,29 @@
                                         {
                                             "value":  [
                                                           "@{value=System.Object[]; Count=2}",
-                                                          "@{id=fg-06-hero; mode=built-in imagegen; prompt=Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: Close-up of two hands on a gamepad; soft glowing threads travel from the buttons into a tiny character leaping on a screen in the background.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark.}"
+                                                          "@{id=fg-04-hero; mode=built-in imagegen; prompt=Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A charming small shop with wooden shelves of game boxes, each shelf marked by a simple icon (sword, spaceship, wheat, puzzle piece, race car, ghost), a curious customer browsing.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark.}"
                                                       ],
                                             "Count":  2
                                         },
                                         {
-                                            "id":  "fg-04-hero",
+                                            "id":  "fg-06-coyote",
                                             "mode":  "built-in imagegen",
-                                            "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A charming small shop with wooden shelves of game boxes, each shelf marked by a simple icon (sword, spaceship, wheat, puzzle piece, race car, ghost), a curious customer browsing.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+                                            "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A small character dashes off a cliff edge, a faint timer ring appears for a split second, then the character jumps successfully; a translucent ghost version falls to show the strict alternative.\nCreate a single still illustration with ghosted poses or a sequence of poses that clearly communicates the movement. This is a still image, not an animation.\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
                                         }
                                     ],
                           "Count":  2
                       },
                       {
-                          "id":  "fg-06-coyote",
+                          "id":  "fg-04-mixing",
                           "mode":  "built-in imagegen",
-                          "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A small character dashes off a cliff edge, a faint timer ring appears for a split second, then the character jumps successfully; a translucent ghost version falls to show the strict alternative.\nCreate a single still illustration with ghosted poses or a sequence of poses that clearly communicates the movement. This is a still image, not an animation.\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+                          "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: An alchemistâ€™s table where two potion bottles, one marked with a playing card and the other with a dungeon door, pour together into a single glowing round flask.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
                       }
                   ],
         "Count":  2
     },
     {
-        "id":  "fg-04-mixing",
+        "id":  "fg-07-hero",
         "mode":  "built-in imagegen",
-        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: An alchemistâ€™s table where two potion bottles, one marked with a playing card and the other with a dungeon door, pour together into a single glowing round flask.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A small earnest robot marches rightward across a wooden desk, clutching a card with a single arrow, one foot already over the edge; a person in the background raises a hand in alarm.\n\n\nStyle: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor, no text, no logos, no real game characters. Restrained ink outlines, readable silhouettes, polished print illustration. Full illustration only; no captions, border, or watermark."
     }
 ]
