@@ -102,5 +102,20 @@
         "id":  "f2-11-hero",
         "mode":  "built-in imagegen",
         "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A whimsical machine with dials and a crank that prints out different dungeon maps, each unique, onto a long scroll of paper, while a designer adjusts a dial labelled with a seed icon.\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
+    },
+    {
+        "id":  "f2-11-templates",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 1:1.\nPrimary request: A 4Ãƒâ€”4 grid of room cards, each with a small hand-drawn layout, with a highlighted winding path from a start door at the top to an exit at the bottom passing through some of the rooms.\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
+    },
+    {
+        "id":  "f2-12-hero",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A designer at a desk with six small framed game scenes on the wall: a mountain climb, a dark insect kingdom, a farm, an underworld, a crowd of monsters, and a grid of mechs, taking notes in a notebook.\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
+    },
+    {
+        "id":  "f2-12-loops",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 21:9.\nPrimary request: Two side-by-side circular diagrams drawn like cozy illustrations: one showing a day on a farm (plant, water, harvest, sell), the other showing a run in an underworld (fight, choose blessing, die, return home, talk).\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
     }
 ]
