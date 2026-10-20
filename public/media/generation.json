@@ -237,5 +237,15 @@
         "id":  "f3-12-lod",
         "mode":  "built-in imagegen",
         "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 21:9.\nPrimary request: The same tree shown four times at increasing distance from a camera, each version using fewer triangles, with small wireframe insets showing the simplification.\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
+    },
+    {
+        "id":  "f3-13-hero",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: Six small 3D dioramas on a museum shelf, each representing a different landmark game world: a castle garden, a ruined city, a white test chamber, a dark cathedral, a vast green plateau, and a blocky landscape.\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
+    },
+    {
+        "id":  "f3-13-shortcut",
+        "mode":  "built-in imagegen",
+        "prompt":  "Use case: illustration-story\nAsset type: game-development course illustration, aspect ratio 16:9.\nPrimary request: A knight opening a heavy door from the inside to reveal a familiar sunlit courtyard with a resting bonfire they visited earlier, the moment of realization shown by a small spark above their helmet.\n\nKeep explanatory arrangements precise and readable. Use icons instead of written labels. Style: Warm editorial illustration with flat shapes and subtle paper grain, terracotta, sage green, cream, and charcoal palette, soft directional light, gentle sense of humor. Restrained ink outlines, readable silhouettes, polished print illustration. Original characters. Full illustration only; no text, logos, captions, border, or watermark."
     }
 ]
